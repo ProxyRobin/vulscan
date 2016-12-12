@@ -1,33 +1,16 @@
 ############### 
- nmap 
-###############
-
---------
- Host: 208.75.151.140 (host.lloydsservice.net) 
---------
-Protocol: tcp 
-Port: 80	state: open 
-Port: 443	state: open 
---------
-host;hostname;hostname_type;protocol;port;name;state;product;extrainfo;reason;version;conf;cpe
-208.75.151.140;host.lloydsservice.net;PTR;tcp;80;http;open;Apache httpd;;syn-ack;;10;cpe:/a:apache:http_server
-208.75.151.140;host.lloydsservice.net;PTR;tcp;443;http;open;Apache httpd;;syn-ack;;10;cpe:/a:apache:http_server
---------
-host | hostname | hostname_type | protocol | port | name | state | product | extrainfo | reason | version | conf | cpe
-208.75.151.140 | host.lloydsservice.net | PTR | tcp | 80 | http | open | Apache httpd |  | syn-ack |  | 10 | cpe:/a:apache:http_server
-208.75.151.140 | host.lloydsservice.net | PTR | tcp | 443 | http | open | Apache httpd |  | syn-ack |  | 10 | cpe:/a:apache:http_server
- | 
-############### 
  Shodan 
 ###############
 
-        IP: 208.75.151.140
-        Organization: Cogswell Enterprises
-        Operating System: None
-    
+IP: 208.75.151.140
+Organization: Cogswell Enterprises
+Operating System: None
 
-                Port: 443
-                Banner: HTTP/1.1 200 OK
+
+--------
+
+Port: 443
+Banner: HTTP/1.1 200 OK
 Date: Wed, 07 Dec 2016 03:18:01 GMT
 Server: Apache
 Last-Modified: Tue, 03 Mar 2009 12:53:29 GMT
@@ -39,15 +22,17 @@ Content-Type: text/html
 
 
 
-        
 
-                Port: 53
-                Banner: 9.3.6-P1-RedHat-9.3.6-25.P1.el5_11.11
+--------
 
-        
+Port: 53
+Banner: 9.3.6-P1-RedHat-9.3.6-25.P1.el5_11.11
 
-                Port: 993
-                Banner: * OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE NAMESPACE AUTH=PLAIN AUTH=LOGIN] Dovecot ready.
+
+--------
+
+Port: 993
+Banner: * OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE NAMESPACE AUTH=PLAIN AUTH=LOGIN] Dovecot ready.
 * CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE NAMESPACE AUTH=PLAIN AUTH=LOGIN
 A001 OK Pre-login capabilities listed, post-login capabilities have more.
 * ID ("name" "Dovecot")
@@ -57,10 +42,11 @@ A003 BAD Error in IMAP command received by server.
 A004 OK Logout completed.
 
 
-        
 
-                Port: 80
-                Banner: HTTP/1.1 200 OK
+--------
+
+Port: 80
+Banner: HTTP/1.1 200 OK
 Date: Mon, 05 Dec 2016 10:29:21 GMT
 Server: Apache
 X-Powered-By: PHP/5.5.30
@@ -72,10 +58,11 @@ Content-Type: text/html; charset=UTF-8
 
 
 
-        
 
-                Port: 2083
-                Banner: HTTP/1.1 401 Access Denied
+--------
+
+Port: 2083
+Banner: HTTP/1.1 401 Access Denied
 Connection: close
 Content-Type: text/html; charset="utf-8"
 Date: Mon, 05 Dec 2016 04:29:36 GMT
@@ -93,10 +80,11 @@ Content-Length: 41072
 
 
 
-        
 
-                Port: 2082
-                Banner: HTTP/1.1 301 Moved
+--------
+
+Port: 2082
+Banner: HTTP/1.1 301 Moved
 Server: cpsrvd/11.56.0.39
 Connection: close
 Content-length: 120
@@ -106,10 +94,11 @@ Cache-Control: no-cache, must-revalidate
 
 
 
-        
 
-                Port: 110
-                Banner: +OK Dovecot ready.
+--------
+
+Port: 110
+Banner: +OK Dovecot ready.
 +OK
 CAPA
 TOP
@@ -123,10 +112,11 @@ SASL PLAIN LOGIN
 .
 
 
-        
 
-                Port: 143
-                Banner: * OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE NAMESPACE STARTTLS AUTH=PLAIN AUTH=LOGIN] Dovecot ready.
+--------
+
+Port: 143
+Banner: * OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE NAMESPACE STARTTLS AUTH=PLAIN AUTH=LOGIN] Dovecot ready.
 * CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE NAMESPACE STARTTLS AUTH=PLAIN AUTH=LOGIN
 A001 OK Pre-login capabilities listed, post-login capabilities have more.
 * ID ("name" "Dovecot")
@@ -136,15 +126,17 @@ A003 BAD Error in IMAP command received by server.
 A004 OK Logout completed.
 
 
-        
 
-                Port: 53
-                Banner: 9.3.6-P1-RedHat-9.3.6-25.P1.el5_11.11
+--------
 
-        
+Port: 53
+Banner: 9.3.6-P1-RedHat-9.3.6-25.P1.el5_11.11
 
-                Port: 587
-                Banner: 220-host.lloydsservice.net ESMTP Exim 4.87 #1 Fri, 25 Nov 2016 07:33:42 -0600 
+
+--------
+
+Port: 587
+Banner: 220-host.lloydsservice.net ESMTP Exim 4.87 #1 Fri, 25 Nov 2016 07:33:42 -0600 
 220-We do not authorize the use of this system to transport unsolicited, 
 220 and/or bulk e-mail.
 250-host.lloydsservice.net Hello xxx.xxx.xxx.xxx [xxx.xxx.xxx.xxx]
@@ -156,10 +148,11 @@ A004 OK Logout completed.
 250 HELP
 
 
-        
 
-                Port: 465
-                Banner: 220-host.lloydsservice.net ESMTP Exim 4.87 #1 Wed, 16 Nov 2016 01:24:13 -0600 
+--------
+
+Port: 465
+Banner: 220-host.lloydsservice.net ESMTP Exim 4.87 #1 Wed, 16 Nov 2016 01:24:13 -0600 
 220-We do not authorize the use of this system to transport unsolicited, 
 220 and/or bulk e-mail.
 250-host.lloydsservice.net Hello HqTQXyX4ASOpQ8.net [xxx.xxx.xxx.xxx]
@@ -170,10 +163,11 @@ A004 OK Logout completed.
 250 HELP
 
 
-        
 
-                Port: 2087
-                Banner: HTTP/1.1 401 Access Denied
+--------
+
+Port: 2087
+Banner: HTTP/1.1 401 Access Denied
 Connection: close
 Content-Type: text/html; charset="utf-8"
 Date: Wed, 16 Nov 2016 06:12:07 GMT
@@ -191,4 +185,19 @@ Content-Length: 41061
 
 
 
-        
+############### 
+ nmap by ports
+###############
+port | name | state | product | extrainfo | reason | version | conf | cpe
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 53 | domain | filtered |  |  | no-response |  | 3 | 
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 80 | http | open | Apache httpd |  | syn-ack |  | 10 | cpe:/a:apache:http_server
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 110 | pop3 | filtered |  |  | no-response |  | 3 | 
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 143 | imap | filtered |  |  | no-response |  | 3 | 
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 443 | http | open | Apache httpd |  | syn-ack |  | 10 | cpe:/a:apache:http_server
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 465 | smtps | filtered |  |  | no-response |  | 3 | 
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 587 | submission | filtered |  |  | no-response |  | 3 | 
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 993 | imaps | filtered |  |  | no-response |  | 3 | 
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 2082 | infowave | filtered |  |  | no-response |  | 3 | 
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 2083 | radsec | filtered |  |  | no-response |  | 3 | 
+208.75.151.140 | host.lloydsservice.net | PTR | tcp | 2087 | eli | filtered |  |  | no-response |  | 3 | 
+None
